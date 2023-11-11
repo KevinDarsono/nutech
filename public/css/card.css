@@ -1,0 +1,45 @@
+/* File: public/css/card-styles.css (atau file CSS Anda yang sesuai) */
+
+.card {
+    
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    /* Menambahkan jarak antar card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.card-body {
+   
+    margin-bottom: 1px;
+}
+
+.card-footer {
+  
+    padding: 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    text-align: center;
+    
+   
+}
+
+.card-text {
+    font-size: 1rem;
+    text-align: center;    
+  
+}

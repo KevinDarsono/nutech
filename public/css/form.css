@@ -1,0 +1,50 @@
+/* File: public/css/form-styles.css (atau file CSS Anda yang sesuai) */
+
+/* Stil umum untuk formulir */
+form {
+    max-width: 400px; /* Lebar maksimum formulir */
+    margin: 0 auto; /* Posisikan formulir di tengah halaman */
+}
+
+/* Gaya input teks */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Gaya tombol */
+button {
+    background-color: #eb0d1f; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 15px;
+    width: 300px;
+    border: none;
+    border-radius: 4,4,4,4;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+/* Gaya tombol ketika dihover */
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Gaya pesan kesalahan */
+.error-message {
+    color: #ff0000; /* Warna merah untuk pesan kesalahan */
+    margin-top: 5px;
+}
+
+/* Gaya pesan sukses */
+.success-message {
+    color: #4caf50; /* Warna hijau untuk pesan sukses */
+    margin-top: 5px;
+}
