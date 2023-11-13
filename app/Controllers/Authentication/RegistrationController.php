@@ -12,7 +12,7 @@ class RegistrationController extends BaseController
         return view("authentication/registration/index");
     }
 
-    public function createData(){
+    public function createData() {
         $email = $this->request->getPost("email");
         $first_name = $this->request->getPost("first_name");
         $last_name = $this->request->getPost("last_name");  

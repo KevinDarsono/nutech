@@ -45,7 +45,8 @@ Registrasi
         <div class="content">
             Lengkapi data untuk <br> membuat akun
         </div>
-        <form action="<?php base_url("createData") ?>" method="POST">
+        <form method="post" action="<?php base_url("createData") ?>" >
+        <?= csrf_field(); ?>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" style="border-radius: 5px 0px 0px 5px;padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; background-color: white;">
