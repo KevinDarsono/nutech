@@ -75,7 +75,7 @@ Dashboard
 
 <?= $this->include("page/layouts/partials/hero") ?>
 
-<!-- <div class="row row-grid pt-5">
+<div class="row row-grid pt-5">
     <?php foreach ($component as $data) : ?>
         <div class="box">
             <img class="img" src="<?= base_url($data["image"]) ?>" alt="">
@@ -96,11 +96,11 @@ Dashboard
             <img src="<?= base_url($banner["image"]) ?>" alt="">
         </div>
     <?php endforeach ?>
-</div> -->
+</div>
 
 
 
-<?php echo $api_data;?>
+<?php //echo $api_data;?>
 
 <?= $this->endSection() ?>
 

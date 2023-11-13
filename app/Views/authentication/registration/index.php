@@ -45,14 +45,14 @@ Registrasi
         <div class="content">
             Lengkapi data untuk <br> membuat akun
         </div>
-        <form action="" method="POST">
+        <form action="<?php base_url("createData") ?>" method="POST">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" style="border-radius: 5px 0px 0px 5px;padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; background-color: white;">
                         <i class="fa fa-envelope" style="color: darkgray;"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" size="100" style="border-left: 0" placeholder="masukkan email anda">
+                <input type="email" class="form-control" size="100" style="border-left: 0" placeholder="masukkan email anda" name="email" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -60,7 +60,7 @@ Registrasi
                         <i class="fa fa-users" style="color: darkgray;"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" style="border-left: 0" placeholder="nama depan">
+                <input type="text" class="form-control" style="border-left: 0" placeholder="nama depan" name="first_name" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -68,7 +68,7 @@ Registrasi
                         <i class="fa fa-users" style="color: darkgray;"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" style="border-left: 0" placeholder="nama belakang">
+                <input type="text" class="form-control" style="border-left: 0" placeholder="nama belakang" name="last_name" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -76,7 +76,7 @@ Registrasi
                         <i class="fa fa-key" style="color: darkgray;"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" style="border-left: 0" placeholder="buat password">
+                <input type="password" class="form-control" style="border-left: 0" placeholder="buat password" name="password" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -84,7 +84,7 @@ Registrasi
                         <i class="fa fa-key" style="color: darkgray;"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" style="border-left: 0" placeholder="konfirmasi password">
+                <input type="password" class="form-control" style="border-left: 0" placeholder="konfirmasi password" name="confirm_password" required>
             </div>
             <div class="form-group mb-4">
                 <button type="submit" class="btn btn-danger btn-block" style="width: 100%; background-color: red; padding-top: 10px; padding-bottom: 10px;">

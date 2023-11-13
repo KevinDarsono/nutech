@@ -14,7 +14,10 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('registration', [RegistrationController::class, "index"]);
+$routes->post('createData', [RegistrationController::class,'createData']);
+
 $routes->get("/login", [LoginController::class, "index"]);
+
 
 $routes->get("/dashboard", [AppController::class, "dashboard"]);
 $routes->get("/layouts", function() {
